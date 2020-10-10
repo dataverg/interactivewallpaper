@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.back-one {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 5000;
+  background-color: #000000;
+}
+
+.back-two {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 5000;
+  background-color: #000000;
+}
+
+@keyframes anim {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 0%;
+  }
+}
+
+.wrapper {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+}
+
+p {
+  font-size: 8rem;
+}
+
+small {
+  font-size: 17px;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.cursor {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.cursor-effect {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.cursor-effect div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: cursor-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.cursor-effect div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes cursor-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
