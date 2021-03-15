@@ -4,7 +4,7 @@ const pages = {
       <div class="wallpaper">
         <span>
           <p class="date">02:59:42</p>
-          <h3>Стоит только поверить, что вы можете – и вы уже на полпути к цели.</h3>
+          <h3>Anime.</h3>
         </span>
       </div>
 
