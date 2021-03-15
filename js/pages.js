@@ -3,7 +3,11 @@ const pages = {
     `
       <div class="wallpaper">
         <span>
-          <p class="date">02:59:42</p>
+          <Clock
+          className={css.ukFormat}
+          format={'h:mm:ssa'}
+          style={{fontSize: '1.5em'}}
+          ticking={true} />
           <h3>Anime.</h3>
         </span>
       </div>
